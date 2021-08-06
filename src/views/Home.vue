@@ -1,14 +1,18 @@
 <template>
-<Container/>
+  <div class="h-auto flex flex-col justify-center items-center">
+    <NamePic/>
+    <Spotify/>
+  </div>
 </template>
 
 <script>
-// @ is an alias to /src
+import NamePic from '../components/NamePic.vue'
+import Spotify from '../components/Spotify.vue'
 
-import Container from "@/components/Container";
 export default {
   components: {
-    Container
+    NamePic,
+    Spotify
   }
 }
 </script>
